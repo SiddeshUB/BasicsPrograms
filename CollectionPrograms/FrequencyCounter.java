@@ -8,6 +8,7 @@ public class FrequencyCounter {
 		HashMap<Integer,Integer> frequencyMap = new HashMap<Integer,Integer>();
 		for (int num: numbers) {
 			frequencyMap.put(num ,frequencyMap.getOrDefault(num, 0)+1);
+			System.out.println(frequencyMap.getOrDefault(num, 0));
 		}
 		System.out.println(frequencyMap);
 	}
